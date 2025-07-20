@@ -1,0 +1,24 @@
+﻿@using VideoRentalApp.Models.ViewModels
+@model List<MovieViewModel>
+
+<h2>Movie List</h2>
+
+<div class="movie-grid">
+    @foreach (var movie in Model)
+    {
+        <div class="movie-card">
+            <h4>
+                <a asp-action="Details" asp-route-id="@movie.Id">@movie.Title</a>
+            </h4>
+            <p><strong>Genre:</strong> @movie.Genre</p>
+            <p>
+                <strong>Available:</strong>
+                @(movie.IsAvailable ? "Yes" : "No")
+            </p>
+        </div>
+    }
+</div>
+
+<div>
+    <a class="btn btn-info" asp-action="Rented" asp-route-id="@ViewBag.UserCard">Rented Movies</a>
+</div>

@@ -1,0 +1,55 @@
+﻿@using VideoRentalApp.Models.ViewModels
+@model MovieViewModel
+
+<h2>@Model.Title</h2>
+
+<table class="table">
+    <tr>
+        <th>Genre</th>
+        <td>@Model.Genre</td>
+    </tr>
+    <tr>
+        <th>Language</th>
+        <td>@Model.Language</td>
+    </tr>
+    <tr>
+        <th>Release Date</th>
+        <td>@Model.ReleaseDate.ToString("yyyy-MM-dd")</td>
+    </tr>
+    <tr>
+        <th>Length</th>
+        <td>@Model.Duration minutes</td>
+    </tr>
+    <tr>
+        <th>Age Restriction</th>
+        <td>@Model.AgeRestriction</td>
+    </tr>
+    <tr>
+        <th>Quantity Available</th>
+        <td>@Model.Quantity</td>
+    </tr>
+    <tr>
+        <th>Currently Available</th>
+        <td>
+            @if (Model.IsAvailable && !ViewBag.IsRentedByUser)
+            {
+                <span style="color: green;">Yes</span>
+            }
+            else
+            {
+                <span style="color: red;">No</span>
+            }
+        </td>
+    </tr>
+</table>
+
+@if (Model.IsAvailable && Model.Quantity > 0 && !ViewBag.IsRentedByUser)
+{
+    <form asp-action="Rent" method="post">
+
+        <input type="hidden" name="movieId" value="@Model.Id" />
+        <button type="submit" class="btn btn-primary">Rent</button>
+    </form>
+}
+
+<a asp-action="Index" class="btn btn-secondary">Back to List</a>

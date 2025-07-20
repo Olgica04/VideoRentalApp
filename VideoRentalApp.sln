@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35818.85
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoRentalApp", "VideoRental\VideoRentalApp.csproj", "{38F54D5F-111A-4463-9044-63DA4E552A1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoRentalApp.Domain", "VideoRentalApp.Domain\VideoRentalApp.Domain.csproj", "{C25F42A7-4A0A-43BE-A0F1-7B4A80D68EBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoRentalApp.DataAccess", "VideoRentalApp.DataAccess\VideoRentalApp.DataAccess.csproj", "{A7F458CC-EF1B-4C9D-8AEB-6559FACA39A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoRentalApp.Services", "VideoRentalApp.Services\VideoRentalApp.Services.csproj", "{427EA697-4162-401E-9296-9E728A08C291}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoRentalApp.Models", "VideoRentalApp.Models\VideoRentalApp.Models.csproj", "{2B640CBD-054B-47CB-8F6E-34621F07481C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoRentalApp.Mappers", "VideoRentalApp.Mappers\VideoRentalApp.Mappers.csproj", "{54021DD3-1590-4E61-A841-98A0C6AA6356}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38F54D5F-111A-4463-9044-63DA4E552A1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38F54D5F-111A-4463-9044-63DA4E552A1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38F54D5F-111A-4463-9044-63DA4E552A1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38F54D5F-111A-4463-9044-63DA4E552A1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C25F42A7-4A0A-43BE-A0F1-7B4A80D68EBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C25F42A7-4A0A-43BE-A0F1-7B4A80D68EBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C25F42A7-4A0A-43BE-A0F1-7B4A80D68EBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C25F42A7-4A0A-43BE-A0F1-7B4A80D68EBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7F458CC-EF1B-4C9D-8AEB-6559FACA39A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7F458CC-EF1B-4C9D-8AEB-6559FACA39A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7F458CC-EF1B-4C9D-8AEB-6559FACA39A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7F458CC-EF1B-4C9D-8AEB-6559FACA39A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{427EA697-4162-401E-9296-9E728A08C291}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{427EA697-4162-401E-9296-9E728A08C291}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{427EA697-4162-401E-9296-9E728A08C291}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{427EA697-4162-401E-9296-9E728A08C291}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B640CBD-054B-47CB-8F6E-34621F07481C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B640CBD-054B-47CB-8F6E-34621F07481C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B640CBD-054B-47CB-8F6E-34621F07481C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B640CBD-054B-47CB-8F6E-34621F07481C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54021DD3-1590-4E61-A841-98A0C6AA6356}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54021DD3-1590-4E61-A841-98A0C6AA6356}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54021DD3-1590-4E61-A841-98A0C6AA6356}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54021DD3-1590-4E61-A841-98A0C6AA6356}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D590DD27-3DE5-47BA-9FE8-B481B78A688A}
+	EndGlobalSection
+EndGlobal

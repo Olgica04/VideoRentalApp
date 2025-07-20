@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    @{
+        ViewData["Title"] = "Log In";
+    }
+
+    <div class="min-h-screen flex items-center justify-center bg-gray-100 px-4">
+        <div class="bg-white shadow-xl rounded-2xl p-8 w-full max-w-md">
+            <form asp-action="LogIn" method="post" class="w-100 mx-auto p-4 rounded shadow-sm bg-white" style="max-width: 400px;">
+                <h2 class="mb-4 text-center text-primary">Log In</h2>
+
+                <div class="mb-3">
+                    <input name="email" type="email" id="email" class="form-control" required placeholder="Enter your email" />
+                </div>
+
+                <div class="mb-4">
+                    <input name="cardNumber" type="number" id="cardNumber" class="form-control" required placeholder="Enter your card number" />
+                </div>
+
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-success">
+                        Log In
+                    </button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage as string))
+    {
+        <div class="mt-4 text-red-500 font-semibold">@ViewBag.ErrorMessage</div>
+    }
+
+</div>
